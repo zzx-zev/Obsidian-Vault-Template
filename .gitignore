@@ -1,0 +1,7 @@
+.DS_Store
+.trash/
+
+# Keep reusable folder settings; ignore local app state and plugin programs.
+.obsidian/*
+!.obsidian/daily-notes.json
+!.obsidian/templates.json
