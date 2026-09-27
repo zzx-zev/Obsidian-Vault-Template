@@ -1,5 +1,24 @@
 # 更新记录
 
+## 2026-09-28 · 统一插件分工
+
+- 推荐 Tasks 负责待办、Journals 负责日记／周记和日历导航，核心 Templates 按需用于普通笔记。
+- 明确采用 Journals 后无需 Periodic Notes、Calendar，并关闭核心 Daily notes；保留不使用 Journals 时的简易替代方式。
+- 同步 README、插件设置说明、工作台说明与 Agent 约定，避免把替代插件误列为需要叠加安装的依赖。
+
+## 2026-09-26 · 插件清单与设置说明
+
+- 新增插件清单与设置说明：Tasks 为 HOME 必需，Journals 为可选方案，Periodic Notes 保持待定。
+- 补充核心模板、日记及可选 Journals 周记的目录、命名、周规则和排障说明，注明官方来源与验证范围。
+- 区分首次配置和个人笔记本迁移，补充 Obsidian Sync、复制配置目录及设备独立配置的方法。
+- README 和工作台使用说明链接到统一设置文档；Agent 规则同步修正迁移与可选插件约定。
+
+## 2026-09-26 · 配置由本机维护
+
+- 移除模板中的 `.obsidian/daily-notes.json` 和 `.obsidian/templates.json`，Git 改为忽略整个 `.obsidian/` 目录。
+- README 补充首次使用时日记和模板插件的手动设置步骤；后续插件设置说明补充了沿用个人配置的迁移方式。
+- 更新 Agent 约定和工作台说明，避免假定模板已附带本机配置；HOME 继续通过 Tasks 汇总任务。
+
 ## 模板初版 · v0.4
 
 - HOME 提供「今天」「需要重排」「其他待办」三个互斥区域，其他待办默认折叠。

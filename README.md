@@ -8,9 +8,11 @@
 2. 在 Obsidian 中选择 **打开本地仓库 / Open folder as vault**，选择包含 `HOME.md` 的目录。
 3. 在 **设置 → 第三方插件 / Community plugins** 中安装并启用 **Tasks**。保持 Tasks 的全局过滤器为空，让普通 checkbox 能被汇总。
 4. 打开 [HOME](HOME.md)，在阅读视图或实时阅览中查看任务；没有安装并启用 Tasks 时，查询区块不会变成待办清单。
-5. 如果需要日记按钮和模板插入功能，在核心插件中启用 **Daily notes** 和 **Templates**。模板已附带目录配置：日记保存到 `10 Journal/Daily`，模板位于 `90 System/Templates`。
+5. 推荐使用 **Journals** 管理日记、周记和日历导航，核心 **Templates** 按需用于普通笔记。采用 Journals 后，关闭核心 **Daily notes**，无需再安装 **Periodic Notes** 和 **Calendar**。完整步骤见 [插件清单与设置](<90 System/插件清单与设置.md>)。
 
-本仓库不包含插件程序，也不会自动安装插件或运行 Agent。
+本仓库不包含 `.obsidian` 目录、插件程序或本机配置，也不会自动安装插件或运行 Agent。首次打开后由 Obsidian 在本地生成配置，Git 会忽略整个 `.obsidian/` 目录。个人笔记本换机时，可通过 Obsidian Sync 或复制自己的配置目录沿用设置；仅在未迁移配置时重新设置。
+
+HOME 当前需要 **Tasks 7.23.0 或更新版本**。推荐组合为 **Tasks + Journals**；不使用周期笔记插件时，也可手动或由 Agent 创建日记、周记。插件清单、配置步骤、换机同步及排障说明统一维护在 [插件清单与设置](<90 System/插件清单与设置.md>)。
 
 ## 先体验，再写自己的内容
 
@@ -61,6 +63,6 @@ Tasks 负责在 Obsidian 内汇总任务；Agent 在对话中按需读写文件�
 - 10 Journal / Weekly：可选的周复盘，不要求先写满 Daily。
 - 90 System：Agent 约定的配套说明、可选模板和变更记录。
 
-日记按钮使用 `10 Journal/Daily`，插入模板使用 `90 System/Templates`；需要时手动触发即可。模板不必填满。
+按插件设置说明配置后，日记保存到 `10 Journal/Daily`，周复盘保存到 `10 Journal/Weekly`，正文模板位于 `90 System/Templates`；需要时再创建笔记，模板不必填满。
 
 操作细节和案例入口见 [90 System/工作台使用说明](90%20System/%E5%B7%A5%E4%BD%9C%E5%8F%B0%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md)。
